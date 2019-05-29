@@ -145,8 +145,6 @@ def _get_files():
     else:
         tmp_file = Path(mkstemp(suffix='.zip')[1])
 
-    print(url_data)
-
     if not tmp_file.exists() or tmp_file.stat().st_size == 0:
 
         with urlopen(url_data) as u, tmp_file.open('wb') as f:
