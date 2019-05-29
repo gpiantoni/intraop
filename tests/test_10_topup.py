@@ -17,4 +17,4 @@ def test_topup():
     w.write_graph(graph2use='flat')
     w.write_graph(graph2use='colored')
 
-    # w.run(plugin='MultiProc')
+    w.run(plugin='MultiProc')
