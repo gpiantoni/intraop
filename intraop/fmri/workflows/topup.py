@@ -59,7 +59,7 @@ def make_w_topup():
 def _generate_acqparams():
     i, acq_params = mkstemp(suffix='.txt')
     with fdopen(i, 'w') as f:
-        f.write('0 -1 0 1\n')
-        f.write('0 1 0 1\n')
+        f.write('0 -1 0 .1\n')
+        f.write('0 1 0 .1\n')
 
     return acq_params
